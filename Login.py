@@ -21,7 +21,7 @@ def login_drl(username, password):
     options = webdriver.EdgeOptions()
     options.use_chromium = True
     options.add_argument("--headless")
-    options.add_argument("--log-level=3")
+    options.add_argument("--log-level=0")
     driver = webdriver.Edge(options=options)
     wait = WebDriverWait(driver, 10)
 
